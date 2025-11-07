@@ -1,0 +1,189 @@
+
+(base) C:\Users\pjm05>conda --version
+conda 25.5.1
+
+(base) C:\Users\pjm05>python --version
+Python 3.13.5
+
+(base) C:\Users\pjm05>conda env list
+
+# conda environments:
+#
+base                 * C:\Users\pjm05\anaconda3
+oss                    C:\Users\pjm05\anaconda3\envs\oss
+                       C:\Users\pjm05\miniconda3
+
+
+(base) C:\Users\pjm05>conda create -n oss
+3 channel Terms of Service accepted
+WARNING: A conda environment already exists at 'C:\Users\pjm05\anaconda3\envs\oss'
+
+Remove existing environment?
+This will remove ALL directories contained within this specified prefix directory, including any other conda environments.
+
+ (y/[n])? y
+
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 25.5.1
+    latest version: 25.9.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\pjm05\anaconda3\envs\oss
+
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate oss
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\pjm05>conda env list
+
+# conda environments:
+#
+base                 * C:\Users\pjm05\anaconda3
+oss                    C:\Users\pjm05\anaconda3\envs\oss
+                       C:\Users\pjm05\miniconda3
+
+
+(base) C:\Users\pjm05>conda activate oss
+
+(oss) C:\Users\pjm05>conda list
+# packages in environment at C:\Users\pjm05\anaconda3\envs\oss:
+#
+# Name                     Version          Build            Channel
+
+(oss) C:\Users\pjm05>python --version
+Python
+(oss) C:\Users\pjm05>conda install python = 3.9
+
+InvalidMatchSpec: Invalid spec '=': Invalid spec '=': no package name found in 'None'
+
+
+(oss) C:\Users\pjm05>conda install python=3.9
+3 channel Terms of Service accepted
+Channels:
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 25.5.1
+    latest version: 25.9.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+done
+
+(oss) C:\Users\pjm05>conda list
+# packages in environment at C:\Users\pjm05\anaconda3\envs\oss:
+#
+# Name                     Version          Build            Channel
+bzip2                      1.0.8            h2bbff1b_6
+ca-certificates            2025.11.4        haa95532_0
+expat                      2.7.3            h9214b88_0
+libffi                     3.4.4            hd77b12b_1
+libzlib                    1.3.1            h02ab6af_0
+openssl                    3.0.18           h543e019_0
+pip                        25.2             pyhc872135_1
+python                     3.9.25           h716150d_1
+setuptools                 80.9.0           py39haa95532_0
+sqlite                     3.50.2           hda9a48d_1
+tk                         8.6.15           hf199647_0
+tzdata                     2025b            h04d1e81_0
+ucrt                       10.0.22621.0     haa95532_0
+vc                         14.3             h2df5915_10
+vc14_runtime               14.44.35208      h4927774_10
+vs2015_runtime             14.44.35208      ha6b5a95_10
+wheel                      0.45.1           py39haa95532_0
+xz                         5.6.4            h4754444_1
+zlib                       1.3.1            h02ab6af_0
+
+(oss) C:\Users\pjm05>conda deactivate
+
+(base) C:\Users\pjm05>conda activate oss
+
+(oss) C:\Users\pjm05>python --version
+Python 3.9.25
+
+(oss) C:\Users\pjm05>python
+Python 3.9.25 (main, Nov  3 2025, 22:44:01) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello World")
+Hello World
+>>> a = 1
+>>> b = 10
+>>> print(a+b)
+11
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit()
+
+(oss) C:\Users\pjm05>nano hello_world.py
+'nano'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+(oss) C:\Users\pjm05>nano hello_world.python
+'nano'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+(oss) C:\Users\pjm05>nano hello_world
+'nano'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+(oss) C:\Users\pjm05>notepad hello)world.py
+
+(oss) C:\Users\pjm05>python hello)world.py
+Hello World
+
+(oss) C:\Users\pjm05>notepad divisors.py
+
+(oss) C:\Users\pjm05>python divisors.py 100
+  File "C:\Users\pjm05\divisors.py", line 6
+    if (number % i = 0):
+                   ^
+SyntaxError: invalid syntax
+
+(oss) C:\Users\pjm05>notepad divisors.py
+
+(oss) C:\Users\pjm05>notepad divisors.py 100
+
+(oss) C:\Users\pjm05>python divisors.py 100
+1 2 4 5 10 20 25 50
+
+(oss) C:\Users\pjm05>notepad divisors.py
+
+(oss) C:\Users\pjm05>python divisors.py 100
+1 2 4 5 10 20 25 50 100
+
+(oss) C:\Users\pjm05>
